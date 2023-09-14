@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <title>Lemon Movie</title>
 </head>
-<body>
+<body style="background-color: #f7f7f7;">
 
 
 
@@ -29,8 +29,8 @@
       
     </ul>
     <form class="form-inline my-2 my-lg-0 d-flex text-left" method="get" action="/views/search.php" >
-      <input class="form-control mr-sm-2 mx-3" style="width: 300px" type="search" placeholder="Search" aria-label="Search" name="query">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <input class="form-control mr-sm-2 mx-3" style="width: 300px" type="search" placeholder="Trouver un film" aria-label="Search" name="query">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
     </form>
   </div>
 </nav>
