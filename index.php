@@ -20,19 +20,20 @@ $title = $result['results'];
 
     <?php foreach($title as $t) { ?>
 
-    <div class="card mx-2 my-4 shadow" style="width: 23rem;">
+    <div class="card mx-2 my-4 shadow" style="width: 23rem;" onclick="location.href='/views/movie.php?id=<?php echo stripslashes($t['id']);?>';">
         <img class="card-img-top" src="https://image.tmdb.org/t/p/w500<?php echo stripslashes($t['backdrop_path']); ?>?api_key=8756db543bd67b4620d8be9dbc42bc33" alt="Card image cap">
         <div class="card-body">
         <h3 class="card-title text-center "><?php echo stripslashes($t['title']); ?></h3>
         <p class="card-text"><?php echo stripslashes($t['overview']); ?></p>
         </div>
+        
         <div class="card-footer text-center">
-            <a href="/views/movie.php?id=<?php echo stripslashes($t['id']);?>" class="text-decoration-none fs-5 text-dark card-link">En savoir plus</a>
+        <i>Note : <?php echo stripslashes($t['vote_average']); ?>/10</i>
         </div>
+    
     </div>
 
-    <?php }
-    ?>
+    <?php } ?>
 
     </div>
 </div>
