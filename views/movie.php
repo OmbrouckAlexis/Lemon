@@ -1,6 +1,7 @@
 <?php
 
-require '../controller/api.php';
+include '../controller/api.php';
+include 'header.php';
 
 $title = $result['results'];
 $id = $_GET['id'];
@@ -15,5 +16,7 @@ foreach($title as $t) {
         echo "</ul>";
     }
 }
+
+include 'footer.php';
 
 ?>
