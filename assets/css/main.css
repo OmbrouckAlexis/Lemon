@@ -20,6 +20,14 @@ Modification :
     color: var(--primary-lemon);
 }
 
+.bg-primary-lemon {
+    background-color: var(--primary-lemon);
+}
+
+.margin-top__high {
+    margin-top: 7rem !important;
+}
+
 /** Page Accueil */ 
 
 nav a {
@@ -86,7 +94,7 @@ nav a {
 }
 
 .card-text {
-    height: 240px;
+    height: 230px;
     text-overflow: hidden;
 }
 
@@ -114,6 +122,15 @@ nav a {
     .navbar {
         padding: 20px 0 !important;
     }
+
+    .margin-top__high {
+        margin-top: 2rem !important;
+    }
+
+    #movie__img {
+        margin-bottom: 2rem;
+    }
+    
 }
 
 @media screen and (max-width:600px) {
