@@ -11,8 +11,9 @@
 <body style="background-color: #f7f7f7;">
 
 <?php 
-
-include '../controller/log.php'; // fichier permettant l'écriture des logs 
+if (file_exists('../controller/log.php')) {
+    include '../controller/log.php'; // fichier permettant l'écriture des logs 
+}
 
 ?>
 
