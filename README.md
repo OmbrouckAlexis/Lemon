@@ -12,16 +12,21 @@ Cette application s'utile très simplement.
 
 ## Les choix de conception 
 
-J'ai décidé de développer une application simple d'utilisation, pour permettre à l'utilisateur de naviguer facilement. 3 clics doivent sufire pour trouver un film. C'est pourquoi je propose une application aérée. 
+J'ai décidé de développer une application simple d'utilisation, pour permettre à l'utilisateur de naviguer facilement. 3 clics doivent suffire pour trouver un film. C'est pourquoi je propose une application aérée. 
 
-En ce qui concerne le design, j'ai choisi de garder le vert en couleur principale pour rappeler la couleur de Lemon Interactive. J'ai pris la décision de modifié légérement la couleur de Lemon Interactive, tout en gardant le coté peps. 
+En ce qui concerne le design, j'ai choisi de garder le vert en couleur principale pour rappeler la couleur de Lemon Interactive. J'ai pris la décision de modifié légèrement la couleur de Lemon Interactive, tout en gardant le coté peps. 
 
 J'ai choisi comme nom pour l'application "Lemon Movie" pour créer une filiale cinéma à l'entreprise Lemon Interactive. 
 
-Le choix du format type carte est pour facilité la lecture des informations essentielles a propos des films. J'ai également choisi de mettre la note attribuée par le public en bas de chaque film pour voir ce qu'en pense les autres spectateurs.
+Le choix du format type carte est pour facilité la lecture des informations essentielles à propos des films. J'ai également choisi de mettre la note attribuée par le public en bas de chaque film pour voir ce qu'en pensent les autres spectateurs.
 
 ## Les limitations de l'application
 
-Durant le développement j'ai remarqué des limitations comme : 
+Durant le développement, j'ai remarqué des limitations comme : 
   - L'utilisation de l'API qui a certaines informations manquantes (certaines photos et descriptions).
   - L'utilisation de Bootstrap est parfois limitée également, elle permet de mettre en page rapidement une application web. En revanche, elle limite la créativité pour le design. Par exemple, sur les margins et les paddings, on ne peut pas faire de grands espaces pour donner un côté aéré à notre application.
+
+## Création d'un fichier 'history-search.log'
+
+J'ai créé un fichier 'history-search.log' qui permet d'enregistrer toutes les recherches effectuées sur l'application. 
+J'ai décidé de les écrire en format ```[2023-09-15 22:14:47] Recherche : test``` pour faciliter la lecture du fichier.

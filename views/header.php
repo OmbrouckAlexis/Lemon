@@ -10,6 +10,12 @@
 </head>
 <body style="background-color: #f7f7f7;">
 
+<?php 
+
+include '../controller/log.php'; // fichier permettant l'écriture des logs 
+
+?>
+
 <nav class="navbar navbar-dark bg-dark px-5 py-3">
   <div class="container-fluid">
     <a href="/" class="navbar-brand">Lemon Movie</a>
