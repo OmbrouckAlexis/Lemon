@@ -1,0 +1,129 @@
+/** 
+Ajout du CSS personnalisé pour améliorer le design du site. 
+Dévelopement : Alexis Ombrouck
+Date de création: 14/09/23
+
+Modification : 
+
+-> 15/09/23 : 
+    - Ajustement du design de la page d'accueil 
+    - Responsive design de la page d'accueil
+*/
+
+
+/** Asset */ 
+:root {
+    --primary-lemon: #00dec1;
+}
+
+.primary-lemon {
+    color: var(--primary-lemon);
+}
+
+/** Page Accueil */ 
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#main {
+    background-image: url('../images/cinema.jpg');
+    background-size: cover;
+    background-position-y: -600px;
+    height: 300px;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+}
+
+.card:hover {
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.main-h2 {
+    text-decoration: underline 10px var(--primary-lemon);
+    text-underline-offset: 20px;
+}
+
+.card {
+    width: 28rem;
+}
+
+#header__image {
+    width: 500px;
+}
+
+#main__header {
+    margin-top: 5rem;
+}
+
+.btn-search {
+    --bs-btn-color: var(--primary-lemon);
+    --bs-btn-border-color: var(--primary-lemon);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--primary-lemon);
+    --bs-btn-hover-border-color: var(--primary-lemon);
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--primary-lemon);
+    --bs-btn-active-border-color: var(--primary-lemon);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--primary-lemon);
+    --bs-btn-disabled-bg: transparent;
+    --bs-gradient: none;
+}
+
+.card-footer {
+    background-color: var(--primary-lemon) !important;
+    color: white !important;
+    border-top: none !important;
+    font-size: 20px;
+}
+
+.card-text {
+    height: 240px;
+    text-overflow: hidden;
+}
+
+/**  Responsive page accueil */
+
+@media screen and (max-width: 1600px) {
+    .card {
+        width: 23rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        width: 30rem;
+    }
+
+    #header__image {
+        width: 400px;
+    }
+
+    #main__header {
+        margin-top: 0rem;
+    }
+
+    .navbar {
+        padding: 20px 0 !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .searchbar {
+        padding: 0 20px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .btn-search {
+        display: none;
+    }
+}
